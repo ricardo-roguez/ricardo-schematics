@@ -58,16 +58,16 @@ In the root of the Angular project run:
 
 # List of available schemas in the project
 
-## Entity:
+## Model:
 
 This schema builds the basic template for the following utils:
 
-- Entity
+- Model
 
 
 ##### options:
 
-    --name=entityName
+    --name=modelName
     --path=path/from/src
 
 ### Important!
@@ -76,9 +76,9 @@ Before to run the generate command you **_must create a json file_** with the pr
 
 ##### Json Rules:
 
-1.- The json must be in the same model folder where we want to place our new entity
+1.- The json must be in the same model folder where we want to place our new model
 
-2.- The json name must be the dasherize name of our new entity.
+2.- The json name must be the dasherize name of our new model.
 
 json example:
 
@@ -99,22 +99,22 @@ json example:
 
 ### Steps and example
 
-Desired entity:
+Desired model:
 
-`src/app/modules/home/models/new-entity/new-entity.ts`
+`src/app/modules/home/models/new-model/new-model.ts`
 
 Step 1:
 
 Create the following json:
 
-`src/app/modules/home/models/new-entity/new-entity.json`
+`src/app/modules/home/models/new-model/new-model.json`
 
 Step 2:
 
 Run the following command:
 
 ```bash
- ng generate ricardo-schematic:entity --name=newEntity --path=src/app/modules/home
+ ng generate ricardo-schematic:model --name=newModel --path=src/app/modules/home
 ```
 
 ##### Note:
@@ -122,7 +122,7 @@ Run the following command:
 In case you forget to add the mentioned json an explained error will be throw:
 
 ```bash
- Error: new-entity.json file configuration not found in src/app/modules/home/models/new-entity/new-entity.json, please create it.
+ Error: new-model.json file configuration not found in src/app/modules/home/models/new-model/new-model.json, please create it.
  If you need help, follow the readme for more instructions:
 https://github.com/RicardoR/ricardo-schematics
 ```
@@ -161,10 +161,10 @@ npm run build:watch
 ## How to test the generate files here
 
 Instead of testing inside of angular project you can test it locally.
-Example of entity schema:
+Example of model schema:
 
 ```bash
- schematics .:model --name=entityDemo --path="." --debug=false
+ schematics .:model --name=modelDemo --path="." --debug=false
 ```
 
 **NOTE**: if you dont use `--debug=false` files are not going to be created, actions are only logged by default

@@ -1,0 +1,20 @@
+{
+ "data": [
+   {
+     "name": "id",
+     "type": "number"
+   },
+   {
+     "name": "name",
+     "type": "string"
+   },
+   {
+     "name": "title",
+     "type": "string"
+   },
+   {
+     "name": "private",
+     "type": "boolean"
+   }
+ ]
+}

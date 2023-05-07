@@ -74,7 +74,7 @@ Before to run the generate command you **_must create a json file_** with the pr
 
 ##### Json Rules:
 
-1.- The json must be in the same model folder where we want to place our new model
+1.- The json must be in the same model folder where we want to place our new entity
 
 2.- The json name must be the dasherize name of our new model.
 

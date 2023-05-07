@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "name": "id",
+            "type": "number"
+        },
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "amount",
+            "type": "number"
+        },
+        {
+            "name": "receiverId",
+            "type": "number"
+        }
+    ]
+}

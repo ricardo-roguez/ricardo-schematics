@@ -164,7 +164,7 @@ Instead of testing inside of angular project you can test it locally.
 Example of entity schema:
 
 ```bash
- schematics .:entity --name=entityName --path=featureOne --debug=false
+ schematics .:model --name=entityDemo --path="." --debug=false
 ```
 
 **NOTE**: if you dont use `--debug=false` files are not going to be created, actions are only logged by default

@@ -1,9 +1,9 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "ricardo-schematics": {
+    "model": {
       "description": "A blank schematic.",
-      "factory": "./ricardo-schematics/index#ricardoSchematics"
+      "factory": "./model/index#model"
     }
   }
 }

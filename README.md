@@ -1,38 +1,31 @@
+# Quick demo model example:
+
+This branch contains the necessary setup to create a quick demo. Steps:
+
+1. Install necessary global packages:
+
+```bash
+   npm install -g @angular-devkit/schematics-cli
+```
+
+2. Install the project dependencies and run it:
+
+```bash
+npm install && npm run build
+```
+
+3. Run the preloaded schema:
+
+```bash
+ schematics .:model --name=invoiceModel --path="./feature-one" --debug=false
+```
+
 # Getting Started With Schematics
 
 Prerequisites:
 
 ```bash
 npm install -g @angular-devkit/schematics-cli
-```
-
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM created by the following command:
-
-```bash
-schematics blank --name=ricardo-schematics
-```
-
-### Testing
-
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
-
-Check the documentation with
-
-```bash
-schematics --help
-```
-
-### Unit Testing
-
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
-
-### Publishing
-
-To publish, simply do:
-
-```bash
-npm run build
-npm publish
 ```
 
 # Welcome to ricardo-schematics
@@ -65,8 +58,8 @@ This schema builds the basic template for the following utils:
 
 ##### options:
 
-    --name=modelName
-    --path=path/from/src
+--name=modelName
+--path=path/from/src
 
 ### Important!
 
